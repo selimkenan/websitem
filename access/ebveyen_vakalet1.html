@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترجمة الملفات والكتب</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            direction: rtl;
+            text-align: right;
+        }
+        .dropdown-content {
+            text-align: right;
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 30px;
+   
+}
+
+        
+
+        
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                text-align: left;
+            }
+
+            .menu.active {
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+                right: 100px;
+                font-size: x-large;
+                border-radius: 2px;
+                margin-top: 70px;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 10001;
+        
+            }
+            nav ul li {
+                margin-right: 30px;
+                margin-left: 120px;
+                margin-bottom: 0.9em;
+        
+    }
+        }
+
+        @media screen and (max-width: 480px) {
+            header .logo img {
+                height: 40px;
+                margin-left: 220px;
+
+            }
+        }
+
+       
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu');
+            
+            menuIcon.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body class="b">
+    <header>
+        <div class="logo">
+            <img src="foto/logo.jpg" alt="Logo">
+        </div>
+        <div class="menu-icon">
+            &#9776; <!-- Hamburger icon (three horizontal lines) -->
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="arapca.html" onclick="closeMenu()">الصفحة الرئيسية</a></li>
+                <li><a href="#about-us1" onclick="closeMenu()">من نحن</a></li>
+                <li><a href="#hizmet1" onclick="closeMenu()">خدماتنا</a></li>
+                <li><a href="#iletisim1" onclick="closeMenu()">تواصل معنا</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="foto/ar.png" alt="Arapça"> عربي</button>
+                <div class="dropdown-content">
+                    <a href="index.html"><img src="foto/tr.png" alt="Türkçe"> تركي</a>
+                    <a href="arapؤa.html"><img src="foto/ar.png" alt="Arapça"> عربي</a>
+                    <a href="#"><img src="foto/en.png" alt="İngilizce"> انكليزي</a>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+    <div class="slider1">
+        <div class="slider-text"><br><br><br>
+            <h2>ترجمة الملفات والكتب</h2>
+        </div>
+    </div>
+    
+
+    <main id="about-us">
+        <h3>تفاصيل الخدمة</h3>
+        <div class="about-container">
+            <div class="about-text">
+                <p>نحن نقدم خدمات ترجمة الملفات والكتب بجودة عالية وباحترافية تامة. سواء كنت تحتاج إلى ترجمة كتب أكاديمية، ملفات قانونية، أو مستندات تجارية، فإن فريقنا من المترجمين المحلفين جاهز لتلبية احتياجاتك. يمكنك إرسال ملفاتك إلينا عبر تطبيق الواتساب أو الإيميل، وسنعمل على ترجمتها وتصديقها بسرعة وكفاءة لتلائم متطلباتك. نحن نفهم أن ترجمة الملفات والكتب تتطلب دقة عالية ومعرفة معمقة بالمصطلحات الخاصة بكل مجال، ولهذا نحرص على توظيف مترجمين متخصصين لكل نوع من أنواع النصوص، لضمان الحصول على ترجمة متقنة تلبي احتياجاتك الأكاديمية أو المهنية.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contact" id="iletisim">
+        <div class="contact-info">
+            <h2>معلومات الاتصال<hr></h2>
+            <p><strong>الهاتف:</strong> 0535 343 17 14 - 0536 220 43 43</p>
+            <p><strong>البريد الإلكتروني:</strong> info@access-tr.com</p>
+            <p><strong>ساعات العمل:</strong> من الإثنين إلى الجمعة، من 8 صباحاً إلى 5 مساءً</p>
+            <p><strong>العنوان:</strong> İncilipınar Mah. Mehmet Öte cd. Yüncüler iş merkezi Kat: 2 NO: 35 Gaziantep/Türkiye</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/access.tr.co?mibextid=ZbWKwL"><img src="foto/f.jpg" alt="فيسبوك" class="social-icon"></a>
+                <a href="https://api.whatsapp.com/send/?phone=905353431714&text&type=phone_number&app_absent=0"><img src="foto/w.jpg" alt="واتساب" class="social-icon"></a>
+                <a href="https://www.instagram.com/access.tr.co?igsh=dDk3OGFsNmY0MHpl"><img src="foto/in.jpg" alt="إنستغرام" class="social-icon"></a>
+                <a href="#"><img src="foto/t.jpg" alt="تويتر" class="social-icon"></a>
+            </div>
+        </div>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Şirket Adı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
